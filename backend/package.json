@@ -1,0 +1,25 @@
+{
+  "name": "indian-tickets-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend for Indian Tickets - Train, Bus, Flight booking platform",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": ["tickets", "booking", "train", "bus", "flight"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
