@@ -23,13 +23,14 @@ jobs:
       - name: Install dependencies
         run: |
           cd frontend
-          npm ci
+          npm ci --legacy-peer-deps
       
       - name: Build frontend
         run: |
           cd frontend
           npm run build
         env:
+          NODE_ENV: production
           VITE_API_URL: ${{ secrets.VITE_API_URL || 'https://your-backend-url.com/api' }}
       
       - name: Deploy to GitHub Pages
