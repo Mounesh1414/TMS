@@ -1,0 +1,28 @@
+# Deployment Configuration - Hide Source Code
+
+# Build directories only (no source code)
+frontend/dist/
+frontend/build/
+
+# Documentation that should be public
+README.md
+LICENSE
+
+# Keep these private
+frontend/src/
+backend/
+*.md
+!README.md
+!LICENSE
+.env
+.env.*
+node_modules/
+package.json
+package-lock.json
+*.config.js
+*.config.ts
+tsconfig.json
+vite.config.js
+tailwind.config.js
+postcss.config.js
+setup-data.ps1
